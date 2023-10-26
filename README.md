@@ -1,4 +1,4 @@
-![Oussama Oulaydi](Pics/logo_UPM_jpg.jpg)
+![Oussama Oulaydi](Pics/LOGO_UPM_-_UNIVERSITE_PRIVEE_DE_MARRAKECH.jpg)
 
 
 # Lesson Sharing Repository
