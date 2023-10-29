@@ -1,0 +1,91 @@
+								LA REPOSNCE DU EXO : TP2-SQL.DOCX 
+
+1) SQL> select distinct fonction from employe;
+
+2) SQL> select nom, salaire, commission from employe where fonction = 'commercial';
+
+3) SQL> select * from employe where commission > salaire;
+
+4) SQL> select * from employe where salaire between 20000 and 25000;
+
+5) SQL> select * from employe where fonction = 'commercial' or fonction ='ingenieur';
+
+6) SQL> select * from employe where nom like 'm%';
+
+7) SQL> select * from employe where fonction like'%eur';
+	
+8) SQL> SELECT nom,fonction,matricule,n_service FROM employe WHERE n_service=10 AND (fonction='commercial' OR fonction='directeur');
+
+9) SQL> SELECT nom,matricule FROM employe WHERE commission=0;
+
+10) SQL> SELECT matricule,salaire as "salaire mensuel",nom FROM employe;
+
+11) SQL> SELECT nom,matricule,salaire FROM employe ORDER BY salaire DESC;
+
+12) SQL> SELECT nom,matricule,date_embauche FROM employe WHERE date_embauche > '1991/01/01' ORDER BY nom DESC;
+
+13) SQL> SELECT nom,matricule,commission FROM employe WHERE commission!=0 ORDER BY commission DESC;
+
+14) SQL> SELECT * FROM employe WHERE salaire = salaire * 12 ORDER BY commission ASC;
+
+15) SQL> SELECT employe.nom,lieu FROM employe,service WHERE service.n_service=employe.n_service;
+
+16) SQL> SELECT e1.nom"employe",e2.nom"superieur" FROM employe e1,employe e2 WHERE e1.matr_sup=e2.matricule;
+
+17) SQL> SELECT nom, salaire FROM employe WHERE salaire > (SELECT salaire FROM employe WHERE nom='sanae'); 
+
+18) SQL> SELECT nom,matricule,fonction FROM employe WHERE fonction = (SELECT fonction FROM employe WHERE nom='takoua');
+
+19) SQL> SELECT nom,salaire,matricule FROM employe WHERE salaire > ALL (SELECT salaire FROM employe WHERE n_service=30);
+
+20) SQL> SELECT nom,fonction,matr_sup FROM employe WHERE fonction=(SELECT fonction FROM employe WHERE nom='takoua') AND matr_sup=(SELECT matr_sup FROM employe WHERE nom='takoua');
+21) SQL> SELECT e1.nom,e2.nom,e2.fonction,e2.n_service FROM employe e1,employe e2 WHERE e2.matr_sup=e1.matricule AND e2.n_service!=e2.n_service;
+
+22) SQL> SELECT nom,matricule,date_embauche FROM employe WHERE date_embauche > '01/JAN/1994'; !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+23) SQL> SELECT e2.nom,e2.matricule,e2.fonction,e2.n_service FROM employe e1,employe e2 WHERE (e1.nom='driss') AND (e2.n_service=10) AND (e1.fonction=e2.fonction);
+
+24) SQL> SELECT employe.nom,matricule,lieu FROM employe,service WHERE service.n_service=employe.n_service AND lieu='medina';
+
+25) SQL> SELECT e2.nom,e2.matricule,e2.fonction FROM employe e1,employe e2 WHERE e2.nom='takoua' AND e1.matr_sup=e2.matricule ;
+
+26) SQL> SELECT e1.nom"employe",e1.n_service,e2.nom"superieur",e2.n_service FROM employe e1,employe e2 WHERE e1.matr_sup=e2.matricule AND e1.n_service!=e2.n_service;
+
+27) SQL> SELECT e2.nom,e2.matricule,e2.fonction FROM employe e1,employe e2 WHERE e1.nom='sanae' AND e1.matr_sup=e2.matr_sup;
+
+28) SQL> SELECT employe.nom,fonction,lieu FROM employe,service WHERE service.n_service=employe.n_service AND fonction='directeur';
+
+29) SQL> SELECT e1.nom"employe_emb_avt_sup",e1.matricule FROM employe e1,employe e2 WHERE e1.matr_sup=e2.matricule AND e1.date_embauche>e2.date_embauche;
+
+30) SQL> SELECT e2.nom"superieur de sanae",e2.matricule FROM employe e1,employe e2 WHERE e1.nom='sanae' AND e1.matr_sup=e2.matricule;
+
+31) SQL> SELECT fonction,lieu FROM employe,service WHERE service.n_service=employe.n_service GROUP BY fonction,lieu;
+
+32) SQL> SELECT employe.nom,lieu,date_embauche,matricule FROM employe,service WHERE (service.n_service=employe.n_service) AND (date_embauche>'01-JAN-1990') AND (lieu='daoudiate');
+
+33) SQL> SELECT nom,matricule,salaire*12"revenus annuel" FROM employe WHERE fonction='commercial';
+
+34) SQL> SELECT nom,matricule,commission,salaire FROM employe WHERE fonction='commercial' ORDER BY commission,salaire DESC;
+
+35) SQL> SELECT nom,matricule,salaire FROM employe WHERE salaire*(5/100)>commission;
+
+36) SQL> SELECT nom,matricule,salaire/30"salaire journalier" FROM employe;
+
+37) SQL> SELECT nom,matricule,(sysdate-date_embauche)"nbr de jour" FROM employe;
+
+38) SQL> SELECT SUM(salaire)"salaire total du SERVICE 10" FROM employe WHERE n_service=10;
+
+39) SQL> SELECT nom,fonction,salaire FROM employe WHERE salaire=(SELECT MAX(salaire) FROM employe);
+
+40) SQL> SELECT n_service,SUM(salaire) FROM employe GROUP BY n_service;
+
+41) SQL> SELECT fonction,AVG(salaire) FROM employe GROUP BY fonction HAVING (COUNT(nom)>2);
+
+42) SQL> SELECT n_service,COUNT(*) FROM employe WHERE fonction in('ingenieur','commercial') GROUP BY n_service HAVING(count(nom)>2);
+
+43) 
+
+44)
+
+45) 
+ 
