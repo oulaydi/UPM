@@ -1,4 +1,0 @@
-Tolérance aux pannes
-Évolutivité
-Qualité de service (QoS)
-Sécurité
