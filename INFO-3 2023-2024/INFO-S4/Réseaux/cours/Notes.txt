@@ -1,0 +1,127 @@
+Acces par une console ;
+	1 - port de consol : un port de gestion (cnx hors reseau via un cable).
+	2 - Telnet : acces a distance a la CLI, via les lignes virtuelle (vty).
+	3 - SSH : acces a distance a la CLI securise. 
+
+Cisco ISO -> CLI
+	1 - consol up!
+	2 - Aux : acces via une ligne telephonique,
+
+	 
+ 
+Ip : L'adresse IP (Internet Protocol) est une adresse unique qui est attribuée à chaque périphérique connecté à un réseau IP, tel qu'Internet.
+Cette adresse est utilisée pour identifier le périphérique et permettre sa communication avec d'autres périphériques sur le réseau.
+
+MAC : L'adresse MAC (Media Access Control) est une adresse unique qui est attribuée à chaque carte réseau sur un périphérique.
+Cette adresse est utilisée pour identifier la carte réseau et permettre la communication avec d'autres périphériques sur le même réseau local
+
+
+
+----------------------------------------
+
+acces reseau :
+
+	protocole de a couche physique : 
+		- Recoit la trame
+		- convertir en bit
+		- coder en signal
+
+		- C.C -> S.electrique
+		- I.O -> S.luminaux
+		- S.f -> S.ourlaire
+
+
+le codage : une technique qui permet de convertier un flux de bit en une mesure physique (signal)
+	Deux types : Manchestre - NRZ
+
+types de transmission : 
+	Asynchrone : d'une façcon discontinue
+	Synchrone : d'une façon continue 
+
+la modulation : est une technique de transmission des données qui consiste à modifier une onde (porteuse)
+paracteristique d'une autre onde (signal).
+
+
+B.p (bande passante) : debit maximale, 
+Debit : la qte de donnee a transporter par un support
+
+
+Les supports de transmission :
+
+	Les supports en cuivre : 
+		- moin cheres
+		- faciles à installer et
+		- présentent
+		une faible résistance au courant électrique.
+	les types des cables : 
+		- UTP (non blindées) 
+			- droit (type differante)
+			- croise (meme type)
+			- collover (console)
+		- STP (blindées)
+		- coax
+
+la fibre optique : 
+	avt : langues distnaces + debit eleves, insensible 
+	ine : plus chere, difficile a installer.
+
+
+sans fil : 
+	avt : mobilite
+	ine : la zone des couverture, la securite, interfirance
+
+
+Les protocoles de la couche liaison de
+données : 
+		liaison : accepte les paquete de la couche 3 et
+			de l'ncapsule sans format d'une trame
+			
+				- LLC : definit les processus logiciels
+				- MAC : (contcole d'acces au supprot) Access aux supports
+
+
+--------------------------------------------------------
+
+controle d'acces au support : 
+
+
+	1 - les protocoles de couche physique : 
+		topologie physique : 
+
+			- WAN :
+				Point à point, .-.
+				Hub and spoke,
+				Maillée,
+					: Support non partager
+			
+			- LAN : 
+				topologie en étoile
+				étendue ou hybride
+				en bus : Ethernet 
+				en anneau : support partager = 
+						* Acces avec gestion des conflits
+							CSMA/CD : Ecoute -> Ethernet
+							CSMA/CA : Ecoute + reservation -> WiFi
+						* Acces controlé
+							tour a tour
+		
+		topologie logique : 
+
+
+
+
+
+- Trame LAN, WAN :
+
+	Ethernet : est la tech de reseau local predominante.
+	 
+
+
+
+
+
+
+
+
+
+
