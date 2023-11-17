@@ -1,8 +1,0 @@
-Couche reseau 
-Segmentation du reseau 
-VLSM
-Routage statique 
-VLAN
-Routage dynamique
-
-https://cisco.ofppt.info/ccna1/index.html
