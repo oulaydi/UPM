@@ -1,0 +1,54 @@
+1 : 
+
+Public Class Form1
+    Private Sub btnCalculer_Click(sender As Object, e As EventArgs) Handles btnCalculer.Click
+        Dim nombreTetes As Integer
+        Dim nombrePattes As Integer
+
+        Dim nombreLapins As Integer
+        Dim nombrePoules As Integer
+
+            ' Calcul du nombre de lapins
+            nombreLapins = (coefficientPoule * nombreTetes - coefficientLapin * nombrePattes) / (coefficientPoule - coefficientLapin)
+
+            ' Calcul du nombre de poules
+            nombrePoules = (nombreTetes - nombreLapins * coefficientLapin) / coefficientPoule
+
+            ' Affichage des résultats
+            lblLapins.Text = "Nombre de lapins est : " & nombreLapins
+            lblPoules.Text = "Nombre de poules est : " & nombrePoules
+        Else
+            MessageBox.Show("Veuillez entrer des valeurs numériques valides pour le nombre de têtes et de pattes.")
+    End Sub
+End Class
+
+2 : 
+
+
+Public Class Form1
+    Private Sub btnVerifier_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim annee As Integer
+
+        If Integer.TryParse(TextBox1.Text, annee) Then
+            Dim estBissextile As Boolean = False
+
+            ' Vérification si l'année est bissextile
+            If annee Mod 4 = 0 Then
+                If annee Mod 100 <> 0 || annee Mod 400 = 0 Then
+                    estBissextile = True
+                End If
+            End If
+
+            ' Affichage du résultat
+            If estBissextile Then
+                Label1.Text = "Année bissextile"
+            Else
+                Label1.Text = "Année non bissextile"
+            End If
+        Else
+            MessageBox.Show("Veuillez entrer une année valide.")
+        End If
+    End Sub
+End Class
+
+

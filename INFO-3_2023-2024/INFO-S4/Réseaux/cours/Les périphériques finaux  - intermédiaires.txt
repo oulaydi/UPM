@@ -1,0 +1,19 @@
+finaux : 
+
+Ordinateurs (stations de travail, ordinateurs
+portables, serveurs de fichiers, serveurs Web)
+Imprimantes réseau
+Téléphones
+VoIP
+Terminal TelePresence
+Caméras de surveillance
+Appareils
+portatifs (smartphones, tablettes, PDA, lecteurs
+de carte sans fil et lecteurs de codes à barres)
+
+intermédiaires : 
+
+Commutateurs,
+points d'accès sans fil (accès réseau),
+Routeurs (Interréseau),
+Pare-feu (sécurité).
