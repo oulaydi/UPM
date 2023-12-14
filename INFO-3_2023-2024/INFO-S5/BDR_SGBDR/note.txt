@@ -1,0 +1,4 @@
+une base de données réparties est un ensemble de base de données situées sur différents et apparaissant aux application comme une seule et même base de données.
+
+-----------------------------------------------------------------------------------------------------------
+
