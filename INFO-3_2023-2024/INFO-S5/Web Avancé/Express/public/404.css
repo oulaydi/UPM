@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    margin: 200px;
+}
+
+h1, h3 {
+    color: red;
+}
+
+p {
+    color: rgb(222, 68, 68);
+}
+
+div {
+    text-align: center;
+}

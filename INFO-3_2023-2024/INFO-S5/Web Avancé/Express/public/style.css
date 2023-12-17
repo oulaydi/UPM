@@ -1,0 +1,8 @@
+body {
+    background-color: gray;
+    margin: 200px;
+}
+
+h1, p {
+    color: yellow;
+}
